@@ -3,6 +3,31 @@ title: "Pedal, Park & Ride"
 output: github_document
 ---
 
+We pulled-down data on travel behaviour, public transport routes and cycle parking points.
+
+```{r, echo=FALSE, fig.cap="Estimate of 'catchment areas' for cycling to a bus stop with parking"}
+knitr::include_graphics("osm/3k_buffer.png")
+```
+
+```{r, echo=FALSE, "Overview of cycle parking points (red) and bus stops (blue) in West Yorkshire"}
+knitr::include_graphics("osm/screenshot_bike_parks_bus_stops.png")
+```
+
+See [here](http://rpubs.com/RobinLovelace/316902) for an interactive prototype.
+
+
+```{r, results='hide', fig.cap="Major commutes (red), bus stops (black) and cycle parking points (green)."}
+library(tmap)
+tmap_mode("view")
+source("get_zones.R")
+qtm(zones) +
+qtm(bus.stops, dots.col = "black") +
+qtm(bike.parking, dots.col = "green") +
+qtm(lines, lines.lwd = 4)  
+```
+
+
+
 ## Tech
 
 This project uses the development version of the stplanr package:
