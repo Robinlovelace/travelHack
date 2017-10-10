@@ -10,7 +10,7 @@ zones <- zones[,c("geo_code","avslope","geo_label","all","light_rail","train","b
 
 bus.stops <- st_read("../travelHack/osm/bus_stops_points.shp")
 bike.parking <- st_read("../travelHack/osm/bike_parks_points.shp")
-lines <- readRDS("../travelhack/listofroutes.Rds")
+lines <- readRDS("../travelHack/listofroutes.Rds")
 
 bus.stops <- st_transform(bus.stops, 27700)
 bike.parking <- st_transform(bike.parking, 27700)
