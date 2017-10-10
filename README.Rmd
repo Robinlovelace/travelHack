@@ -1,0 +1,12 @@
+---
+title: "Pedal, Park & Ride"
+output: github_document
+---
+
+## Tech
+
+This project uses the development version of the stplanr package:
+
+```{r, eval=FALSE}
+devtools::install_github("ropensci/stplanr", ref = "sfr")
+```
