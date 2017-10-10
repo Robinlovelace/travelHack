@@ -38,6 +38,17 @@ qtm(lines, lines.lwd = 4)
 
 ![Major commutes (red), bus stops (black) and cycle parking points (green).](README_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
 
+Next steps
+----------
+
+Prioritise the stops which most urgently need cycle parking based on:
+
+-   number of people potentially travelling
+-   greatest distance to cycle parking
+-   greatest car dependency
+
+Scale-up the interactive map to cover a greater area, and publish the results as an interactive toolkit.
+
 Tech
 ----
 
